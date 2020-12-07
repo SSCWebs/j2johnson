@@ -15,8 +15,7 @@ export class Admin extends React.Component<{}, IState> {
         super(props);
         this.state = {
             list: [],
-            adminPassword: "21",
-            // adminPassword: "Together2021",
+            adminPassword: "Together2021",
             password: "",
             error: "",
             checkPassword: ""
