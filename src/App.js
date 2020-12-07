@@ -1,24 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import './fireworks.scss';
+import Menu from './components/navbar/nav';
+import Home from './components/home/home';
+import About from './components/about/about';
+import RSVP from './components/rsvp/rsvp';
+import Registry from './components/registry/registry';
+import Gallery from './components/gallery/gallery';
+import Info from './components/info/info';
+import TTD from './components/ttd/ttd';
+import Admin from './components/admin/admin';
+import Footer from './components/footer/footer';
+import { Switch, Route, useLocation } from 'react-router-dom';
+import LoadingPage from './components/loadingPage/loadingPage';
+import CovidFAQ from './components/covidFAQ/covidFAQ';
+
 
 function App() {
+  let location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {location.pathname !== '/' && <Menu />}
+      <Switch>
+        <Route path="/home" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/rsvp" component={RSVP} />
+        <Route path="/registry" component={Registry} />
+        <Route path="/gallery" component={Gallery} />
+        <Route path="/info" component={Info} />
+        <Route path="/thingstodo" component={TTD} />
+        <Route path="/covidfaq" component={CovidFAQ} />
+        <Route path="/admin" component={Admin} />
+        <Route path="/" component={LoadingPage} />
+      </Switch>
+      {location.pathname !== '/' && <Footer />}
     </div>
   );
 }

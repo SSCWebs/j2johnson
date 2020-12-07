@@ -1,0 +1,915 @@
+$black: #000000;
+$white: #ffffff;
+$red: #ff0000;
+$maroon: #800000;
+$darkGold: #b8860b;
+$lgrey: #cccccc;
+$onyx: #121212;
+
+@font-face {
+  font-family: 'Babyola';
+  src: url(./fonts/babyola/Babyola.ttf) format('truetype'),
+      url(./fonts/babyola//Babyola.woff) format('woff');
+} 
+
+@font-face {
+  font-family: 'Arapey';
+  src: url(./fonts/arapey/Arapey-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Arapey Italic';
+  src: url(./fonts/arapey/Arapey-Italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Candle Mustard';
+  src: url(./fonts/candle_mustard/CandleMustard.ttf) format('truetype');
+}
+
+@font-face {  
+  font-family: 'Apple Garamond Italic';
+  src: url(./fonts/apple_garamond/AppleGaramond-Italic.ttf) format('truetype');
+}
+
+@font-face {  
+  font-family: 'Apple Garamond Light';
+  src: url(./fonts/apple_garamond/AppleGaramond-Light.ttf) format('truetype');
+}
+
+@font-face {  
+  font-family: 'Apple Garamond Light Italic';
+  src: url(./fonts/apple_garamond/AppleGaramond-LightItalic.ttf) format('truetype');
+}
+
+@font-face {  
+  font-family: 'Apple Garamond';
+  src: url(./fonts/apple_garamond/AppleGaramond.ttf) format('truetype');
+}
+
+/* GENERAL STYLING */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  position: relative;
+}
+
+h1, .h1 {
+  font-family: 'Babyola';
+}
+
+p, span, tr, 
+td, th {
+  font-family: 'Apple Garamond Italic';
+}
+
+a:link, a:hover, .faqLink {
+  color: $white;
+}
+
+.faqLink:hover {
+  color: $darkGold !important;
+}
+
+.background {
+  background-color: $black;
+  color: $white;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 4em;
+  overflow-y: auto;
+  padding-bottom: 2em;
+  position: relative;
+}
+
+.heading {
+  font-size: 72px;
+  color: $maroon !important;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.candleMustard {
+  font-family: 'Candle Mustard';
+  font-size: 48px;
+}
+
+.babyola {
+  font-family: 'Babyola';
+  font-size: 40px;
+}
+
+.hr {
+  border: 1px solid $onyx;
+}
+
+/* LOADING COMPONENT */
+.landingPage {
+  width: 100vw;
+  height: 100vh;
+  padding: 5em;
+  background-color: $black;
+  right: 0;
+	position: fixed;
+	top: 0;
+}
+
+.animation {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn{
+  0% { opacity: 0; }
+  100% { opacity: 1;}
+}
+@-webkit-keyframes fadeIn{
+  0% { opacity: 0; }
+  100% { opacity: 1;}
+}
+@-moz-keyframes fadeIn{
+  0% { opacity: 0; }
+  100% { opacity: 1;}
+}
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1;}
+}
+
+.landingHeading {
+  padding: .3em;
+}
+
+.landingImg {
+  width: 50vw;
+}
+
+/* NAVBAR COMPONENT */
+.divNavbar {
+  // height: 8em;
+  background-color: $darkGold;
+  overflow: hidden;
+  padding-top: .5em;
+}
+
+.navheader {
+  padding-top: .5em;
+  color: $maroon;
+  // position: absolute;
+}
+
+.navbar-nav {
+  padding-top: 10px;
+}
+
+.navbarDiv {
+  padding-top: 5.5em;
+  height: 3em;
+  // position: relative;
+}
+
+.nav-link {
+  // margin-top: -4em;
+  color: $white !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-size: 24px; 
+  font-style: italic; 
+  font-variant: small-caps;  
+  line-height: 26.4px;
+  &:hover {
+    color: $maroon !important;
+  }
+  &:active {
+    color: $maroon !important;
+  }
+}
+
+.navbar-toggler {
+  border-color: $maroon !important;
+  margin-top: -55px;
+  margin-left: 280px;
+}
+
+.navbar-toggler-icon {
+  background-color: $maroon !important;
+}
+
+/* HOME COMPONENT */
+.vidBox {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  padding-right: 4em;
+  padding-left: 4em;
+}
+
+.video {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.countdown li {
+  display: inline-block;
+  font-family: 'Apple Garamond Light Italic';
+  font-size: 1.5em;
+  padding: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.countdown li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+/* ABOUT COMPONENT */
+.about {
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.aboutVid {
+  border: 1px solid $white;
+  margin-bottom: 1em;
+  width: 90%;
+  height: 80vh;
+  position: relative;
+}
+
+/* RSVP COMPONENT */
+.rsvpInfo {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rsvpInfo p {
+  font-size: 18px;
+}
+
+.rsvpInfo h3 {
+  font-family: 'Apple Garamond Italic';
+  color: $darkGold;
+}
+
+.rsvpInfo hr {
+  border: 1px solid $darkGold;
+}
+
+.searchDiv {
+  margin-top: 1em !important;
+  margin-left: .5em !important;
+  margin-bottom: -1.5em !important;
+}
+
+.rsvpSearch {
+  width: 24em !important;
+  margin-right: .3em;
+  font-family: 'Arapey' !important;
+}
+
+.srchBtn {
+  background-color: $maroon !important;
+  border-color: $maroon !important;
+  &:hover {
+    border-color: $darkGold !important;
+    background-color: $black !important;
+  }
+}
+
+.rsvpTable {
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.sticky {
+  position: sticky;
+  top: 5;
+}
+
+.tableHead, .tableInfo {
+  text-align: center;
+  color: $white;
+}
+
+.tableBody {
+  padding-top: 1em;
+  height: 600px; 
+  overflow: auto;
+}
+
+.btnSpace {
+  margin-right: .3em;
+}
+
+.cbg {
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+
+  }
+}
+
+/* REGISTRY COMPONENT */
+.poemDiv {
+  margin-top: -35em;
+  width: 80vw;
+  height: 70vh;
+}
+
+.poemFont {
+  font-family: 'Apple Garamond Light Italic'; 
+  font-size: 2vw;
+  margin-top: 2em;
+  z-index: 40;
+  position: relative;
+}
+
+.signature {
+  font-size: 7vw;
+}
+
+.test {
+  // margin-top: 2em;
+  // margin-bottom: 1em;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.regImg {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 80%;
+  height: 100%;
+}
+
+/* GALLERY COMPONENT */
+.slides {
+  display: grid;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-left: 10px;
+  > .slide {
+    margin-top: 50px;
+    grid-area: 1 / -1;
+    display: flex;
+    justify-content: center;
+  }
+
+  > button {
+    appearance: none;
+    background: transparent;
+    border: none;
+    color: $white;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 500;
+    width: 5rem;
+    height: 5rem;
+    top: 50%;
+    transition: opacity 0.3s;
+    opacity: 0.7;
+    z-index: 5;
+
+    &:hover {
+      opacity: 1;
+      color: $darkGold;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:first-child {
+      left: 32%;
+    }
+    &:last-child {
+      right: 32%;
+    }
+  }
+}
+
+.slide[data-active] {
+  z-index: 2;
+  pointer-events: auto;
+
+  .slideContent {
+    --x: calc(var(--px) - 0.5);
+    --y: calc(var(--py) - 0.5);
+    opacity: 1;
+
+    transform: perspective(1000px);
+
+    &:hover {
+      transition: none;
+      transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
+        rotateX(calc(var(--y) * -45deg));
+    }
+  }
+}
+
+.slideContent {
+  width: 30vw;
+  height: 40vw;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0.7;
+
+  display: grid;
+  align-content: center;
+
+  transform-style: preserve-3d;
+  transform: perspective(1000px) translateX(calc(100% * var(--offset)))
+    rotateY(calc(-45deg * var(--dir)));
+}
+
+/* INFO COMPONENT */
+.scripture {
+  margin-top: 2.5em;
+  padding: 1em;
+  border: 1px solid $onyx;
+  border-radius: .5em;
+  min-height: 15vh;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 8px 28px -1px $darkGold;
+  -webkit-box-shadow: 1px 8px 28px -1px $darkGold;
+  -moz-box-shadow: 1px 8px 28px -1px $darkGold;
+}
+
+.scripture p {
+  font-family: 'Apple Garamond Light Italic';
+  color: $lgrey;
+  font-size: 20px;
+}
+
+.info {
+  margin-top: 4em;
+}
+
+.info h3 {
+  font-size: 38px;
+  color: $darkGold;
+  &:hover {
+    color: $white;
+  }
+}
+
+.infoHead {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.info p {
+  font-family: 'Apple Garamond';
+}
+
+/* TTD COMPONENT */
+.ttd {
+  margin-top: 4em;
+}
+
+.ttdRow {
+  margin-bottom: 5em;
+  padding-top: 1em;
+  columns: 2 auto;
+}
+
+.ttdImg {
+  margin-bottom: 1em;
+  border-radius: 50%;
+  max-width: 18vh;
+  height: 15vh;
+}
+
+.subHead {
+  font-family: 'Apple Garamond Italic';
+  // font-size: 2vw;
+  color: $darkGold;
+  &:hover {
+    color: $white;
+  }
+}
+
+/* FAQ COMPONENT */
+.covidText {
+  font-size: 24px;
+}
+
+.faqRow {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.faq {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: $black !important;
+  border: 1px solid $maroon !important;
+  height: 20vh;
+  width: 20vw;
+}
+
+.faqText {
+  font-family: 'Apple Garamond';
+}
+
+/* ADMIN COMPONENT */
+.adminBox {
+  margin: 6em auto;
+  justify-content: center;
+  align-items: center;
+  width: 70vh;
+  height: 30vh;
+}
+
+.adminSrch {
+  max-width: 24em;
+  font-family: 'Arapey' !important;
+  font-size: 18px !important;
+}
+
+.adminBtn {
+  margin-top: .5em;
+  font-family: 'Appale Garamond Light';
+}
+
+.error {
+  color: $red;
+}
+
+/* FOOTER COMPONENT */
+.footer {
+  padding: 1em;
+  background-color: $darkGold;
+  color: $maroon;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  float: bottom;
+}
+
+.footerHead {
+  font-family: 'babyola';
+  font-size: 26px;
+}
+
+.footerSub {
+  font-family: 'Arapey';
+  font-size: 16px;
+  margin-bottom: -.3em;
+}
+
+.contact {
+  font-family: 'Arapey';
+  font-size: 14px;
+  color: $white;
+  &:hover {
+    color: $lgrey;
+    text-decoration: none;
+  }
+}
+
+/* MOBILE VIEWS */
+// iPhone 6,7,8
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 667px) { 
+  .background {
+    padding-top: 10em;
+  }
+  
+  .navheader {
+    margin-top: -.5em;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 19px;
+    align-content: center;
+  }
+
+  .navbar-nav {
+    padding-top: 0px;
+  }
+
+  .vidBox {
+    margin-top: 1em !important;
+    padding-right: 1em !important;
+    padding-left: 1em !important;
+  }
+  
+  .landscapeImg {
+    height: 20em !important;
+  }
+
+  .slideContent {
+    width: 80vw;
+    height: 60vh;
+  }
+
+  .poemFont {
+    font-size: 20px;
+  }
+
+  .candleMustard {
+    font-size: 34px;
+  }
+
+  .scripture {
+    width: 15em !important;
+  }
+
+  .mobileFaq1 {
+    height: 40vh;
+  }
+
+  .mobileFaq2 {
+    height: 26vh;
+  }
+
+  .question {
+    font-size: 26px;
+  }
+}
+
+// iPhone 6,7,8 Plus
+@media only screen 
+and (min-width : 414px) 
+and (max-width : 736px) { 
+  .background {
+    padding-top: 10em !important;
+  }
+  
+  .navheader {
+    margin-top: -.5em;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 19px;
+    align-content: center;
+  }
+
+  .navbar-nav {
+    padding-top: 0px;
+  }
+
+  .vidBox {
+    margin-top: 1em !important;
+    padding-right: 1em !important;
+    padding-left: 1em !important;
+  }
+  
+  .landscapeImg {
+    height: 20em !important;
+  }
+
+  .poemFont {
+    font-size: 20px;
+  }
+
+  .candleMustard {
+    font-size: 34px;
+  }
+
+  .scripture {
+    width: 15em !important;
+  }
+}
+
+// iPhone X
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 812px) 
+and (-webkit-device-pixel-ratio : 3) { 
+  // .landingImg {
+  //   width: 450px;
+  //   margin-right: 10px;
+  // }
+  
+  .landingHeading {
+    padding-top: 10vw;
+    font-size: 15vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .background {
+    padding-top: 10em;
+  }
+  
+  .navheader {
+    margin-top: -.5em !important;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 19px;
+    align-content: center;
+  }
+  
+  .navbar-nav {
+    padding-top: 0px;
+  }
+
+  .vidBox {
+    margin-top: 1em !important;
+    padding-right: 1em !important;
+    padding-left: 1em !important;
+  }
+
+  .landscapeImg {
+    height: 15em !important;
+  }
+
+  .mobileFaq1 {
+    height: 35vh;
+  }
+
+  .mobileFaq2 {
+    height: 23vh;
+  }
+
+  .question {
+    font-size: 26px;
+  }
+
+  .slides {
+    > button {
+      &:first-child {
+        left: 5%;
+      }
+      &:last-child {
+        right: 5%;
+      }
+    }
+  }
+
+  .slideContent {
+    width: 80vw;
+    height: 60vh;
+  }
+}
+
+// iPad
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px)  { 
+ .navheader {
+   padding-top: 60px;
+   margin-top: -1em !important;
+   font-size: 50px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 19px;
+    align-content: center;
+ }
+
+ .navbar-toggler {
+  margin-top: -90px;
+  margin-left: 650px;
+ }
+
+ .navbar-nav {
+  padding-top: 0px;
+}
+ 
+  .header {
+   margin-top: 2em !important;
+ }
+
+  .nl-center {
+    margin-top: 6.5em;
+    left: 50%;
+    transform: translate(-25%);
+  }
+
+  .heading {
+    margin-top: 1.5em;
+  }
+  
+  .landscapeImg {
+    height: 20em !important;
+  }
+
+  .slideContent {
+    width: 80vw;
+    height: 60vh;
+  }
+
+  .faq {
+    height: 27vh;
+  }
+
+  .question {
+    font-size: 30px;
+  }
+}
+
+// iPad Pro
+@media only screen 
+and (min-width : 1024px) 
+and (max-width : 1366px)  { 
+ .background {
+   padding-top: 4em;
+ }
+ 
+  .navheader {
+  margin-bottom: -.5em !important;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-left: 19px;
+  align-content: center;
+  padding-top: 30px;
+ }
+
+  .nl-center {
+    margin: 0 auto;
+    margin-top: 4em;
+  }
+
+  .video {
+    margin-top: 4em;
+  }
+  
+  .landscapeImg {
+    height: 27em !important;
+  }
+
+  .faq {
+    height: 30vh;
+  }
+
+  .question {
+    font-size: 42px;
+  }
+
+  .answer {
+    font-size: 24px;
+  }
+}
+
+// Galaxy S5
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .background {
+      padding-top: 10em;
+    }
+    
+    .navheader {
+      margin-top: -.3em;
+      font-size: 30px;
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 19px;
+      align-content: center;
+    }
+
+    .navbar-nav {
+      padding-top: 20px;
+    }
+
+    .vidBox {
+      margin-top: 1em !important;
+      padding-right: 1em !important;
+      padding-left: 1em !important;
+    }
+    
+    .landscapeImg {
+      height: 20em !important;
+    }
+
+    .slideContent {
+      width: 80vw;
+      height: 60vh;
+    }
+
+    .poemFont {
+      font-size: 20px;
+    }
+
+    .candleMustard {
+      font-size: 34px;
+    }
+
+    .scripture {
+      width: 15em !important;
+    }
+}
+
+// Web View
+@media only screen 
+and (min-device-width : 1366px) {
+  
+}
+ 
