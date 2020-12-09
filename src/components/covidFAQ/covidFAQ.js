@@ -13,7 +13,7 @@ class CovidFAQ extends React.Component {
                     (WHO) and the Center for Disease Control and Prevention (CDC)
                     to appropriatley prepare for our wedding day and protect the
                     health and safety of our bridal party and guests.</p>
-                    <p className="covidText">At the point, we plan to move forward with our May 8, 2021
+                    <p className="covidText">At this point, we plan to move forward with our May 8, 2021
                     wedding date and will use this page on our website and other
                     means of communication to alert you or any changes to our
                     plans.</p>
@@ -24,7 +24,7 @@ class CovidFAQ extends React.Component {
                     sent by email.</p>
                     <p className="covidText">Most importantly, the safety of our guests is a prioirty.
                     Please check our website and national/local public health
-                    websites regualry for updates.</p>
+                    websites regularly for updates.</p>
                     <p className="covidText">We appreciate your love and patience!</p>
                 </div>
                 <div>

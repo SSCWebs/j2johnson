@@ -47,7 +47,7 @@ export class FAQ extends React.Component {
                     <Card className="col-md-5 faq center">
                         <h1 className="faqText question">What time should I arrive at
                         the ceremony?</h1>
-                        <h6 className="faqText answer">Please arrive before 3:00 pm. The 
+                        <h6 className="faqText answer">Please arrive by 3:30 pm. The 
                         ceremony will begin promptly at 4:00 pm.</h6>
                     </Card>
                 </div>

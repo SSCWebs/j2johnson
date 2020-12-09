@@ -1,5 +1,4 @@
 import React from 'react';
-// import Swirl from '../../images/wswirl.png';
 
 export class Info extends React.Component {
     render() {

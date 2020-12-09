@@ -11,7 +11,6 @@ export class About extends React.Component {
                     <ReactPlayer 
                         className="video center"
                         url="https://s3.amazonaws.com/journey2johnson2021.com/Wedding+Video.mp4" 
-                        // playing
                         width="100%"
                         controls={true} />
                     </div>
@@ -23,8 +22,7 @@ export class About extends React.Component {
                     <div className="vidBox center">
                     <ReactPlayer 
                         className="video center"
-                        url="https://s3.amazonaws.com/journey2johnson2021.com/The+Proposal!.mov" 
-                        // playing
+                        url="https://s3.amazonaws.com/journey2johnson2021.com/The+Proposal!.mov"
                         width="100%"
                         controls={true} />
                     </div>

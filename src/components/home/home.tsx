@@ -11,7 +11,7 @@ export class Home extends React.Component{
                     <ReactPlayer 
                         className="video center"
                         url="https://s3.amazonaws.com/journey2johnson2021.com/EngagementVideo.mov" 
-                        // playing
+                        playing
                         width="100%"
                         controls={true} />
                 </div>

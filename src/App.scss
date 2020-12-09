@@ -10,7 +10,7 @@ $onyx: #121212;
 @font-face {
   font-family: 'Babyola';
   src: url(./fonts/babyola/Babyola.ttf) format('truetype'),
-      url(./fonts/babyola//Babyola.woff) format('woff');
+      url(./fonts/babyola/Babyola.woff) format('woff');
 } 
 
 @font-face {
@@ -67,6 +67,10 @@ td, th {
 
 a:link, a:hover, .faqLink {
   color: $white;
+}
+
+.faqLink {
+  color: $darkGold !important;
 }
 
 .faqLink:hover {
@@ -152,7 +156,6 @@ a:link, a:hover, .faqLink {
 
 /* NAVBAR COMPONENT */
 .divNavbar {
-  // height: 8em;
   background-color: $darkGold;
   overflow: hidden;
   padding-top: .5em;
@@ -161,7 +164,6 @@ a:link, a:hover, .faqLink {
 .navheader {
   padding-top: .5em;
   color: $maroon;
-  // position: absolute;
 }
 
 .navbar-nav {
@@ -171,11 +173,9 @@ a:link, a:hover, .faqLink {
 .navbarDiv {
   padding-top: 5.5em;
   height: 3em;
-  // position: relative;
 }
 
 .nav-link {
-  // margin-top: -4em;
   color: $white !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
   font-size: 24px; 
@@ -339,8 +339,6 @@ a:link, a:hover, .faqLink {
 }
 
 .test {
-  // margin-top: 2em;
-  // margin-bottom: 1em;
   overflow: hidden;
   overflow-x: hidden;
 }
@@ -493,7 +491,6 @@ a:link, a:hover, .faqLink {
 
 .subHead {
   font-family: 'Apple Garamond Italic';
-  // font-size: 2vw;
   color: $darkGold;
   &:hover {
     color: $white;
@@ -691,10 +688,6 @@ and (max-width : 736px) {
 and (min-width : 375px) 
 and (max-width : 812px) 
 and (-webkit-device-pixel-ratio : 3) { 
-  // .landingImg {
-  //   width: 450px;
-  //   margin-right: 10px;
-  // }
   
   .landingHeading {
     padding-top: 10vw;
@@ -906,11 +899,5 @@ and (max-width : 1366px)  {
     .scripture {
       width: 15em !important;
     }
-}
-
-// Web View
-@media only screen 
-and (min-device-width : 1366px) {
-  
 }
  
