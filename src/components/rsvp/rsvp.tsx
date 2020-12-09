@@ -85,7 +85,7 @@ export class RSVP extends React.Component<{}, IState> {
         console.log(updateRSVP);
 
         try {
-            const res = await fetch(`http://localhost:8012/list`, {
+            const res = await fetch(`J2johnson-env.eba-nmx7pa4w.us-east-1.elasticbeanstalk.com/list`, {
                 method: 'PATCH',
                 credentials: 'include',
                 body: JSON.stringify(updateRSVP),
