@@ -23,7 +23,7 @@ export class Admin extends React.Component<{}, IState> {
     }
 
     componentDidMount = async () => {
-        const resp = await fetch('http://localhost:8012/list', {
+        const resp = await fetch('J2johnson-env.eba-nmx7pa4w.us-east-1.elasticbeanstalk.com/list', {
             credentials: 'include'
         })
         const list = await resp.json();
