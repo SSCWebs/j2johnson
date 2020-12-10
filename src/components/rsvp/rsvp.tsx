@@ -43,7 +43,7 @@ export class RSVP extends React.Component<{}, IState> {
                 alert("Please enter a valid name");
             }
             else if (!!this.state.name) {
-                const resp = await fetch(`http://localhost:8012/list/${this.state.name}`, {
+                const resp = await fetch(`http://J2johnson-env.eba-nmx7pa4w.us-east-1.elasticbeanstalk.com/list/${this.state.name}`, {
                     credentials: 'include'
                 })
                 const guest = await resp.json();
