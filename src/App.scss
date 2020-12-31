@@ -544,6 +544,11 @@ a:link, a:hover, .faqLink {
   color: $red;
 }
 
+.adminTable {
+  max-height: 625px;
+  overflow-y: scroll;
+}
+
 /* FOOTER COMPONENT */
 .footer {
   padding: 1em;

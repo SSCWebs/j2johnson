@@ -43,7 +43,9 @@ export class RSVP extends React.Component<{}, IState> {
                 alert("Please enter a valid name");
             }
             else if (!!this.state.name) {
-                const resp = await fetch(`http://J2johnson-env.eba-nmx7pa4w.us-east-1.elasticbeanstalk.com/list/${this.state.name}`, {
+                const resp = await fetch(`http:/localhost:8080/list/${this.state.name}`, {
+                // const resp = await fetch(`http:/localhost:8080/list/${this.state.name}`, {
+                // const resp = await fetch(`http://J2johnson-env.eba-nmx7pa4w.us-east-1.elasticbeanstalk.com/list/${this.state.name}`, {
                     credentials: 'include'
                 })
                 const guest = await resp.json();
@@ -82,7 +84,6 @@ export class RSVP extends React.Component<{}, IState> {
             name: this.state.name,
             rsvp: e.target.value,
         }
-        console.log(updateRSVP);
 
         try {
             const res = await fetch(`J2johnson-env.eba-nmx7pa4w.us-east-1.elasticbeanstalk.com/list`, {
