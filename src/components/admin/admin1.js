@@ -10,8 +10,7 @@ function Admin() {
     const [error, setError] = useState("");
     const [currPage, setCurrPage] = useState(1);
     const [guestPerPage] = useState(25);
-    // const adminPassword = "Together2021";
-    const adminPassword = "21";
+    const adminPassword = "Together2021";
 
     useEffect(() => {
         const fetchList = async () => {
