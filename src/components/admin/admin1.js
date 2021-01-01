@@ -14,7 +14,7 @@ function Admin() {
 
     useEffect(() => {
         const fetchList = async () => {
-            const resp = await axios.get('http://100.26.163.236:8080/list');
+            const resp = await axios.get("https://api.journey2johnson2021.com/list");
             setGuestList(resp.data);
         }
         fetchList();

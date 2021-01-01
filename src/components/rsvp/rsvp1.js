@@ -16,7 +16,7 @@ const RSVP = () => {
 
     const handleKeyPress = (e) => {
         if (e.key === 'Enter') {
-            this.findByName();
+            findByName();
         }
     }
 
@@ -26,7 +26,7 @@ const RSVP = () => {
                 alert("Please enter a valid name");
             }
             else if (!!name) {
-                const resp = await axios.get(`http://100.26.163.236:8080/list/${name}`);
+                const resp = await axios.get(`https://api.journey2johnson2021.com/list/${name}`);
                 const guest = await resp.data;
 
                 let seatCount;
@@ -56,7 +56,7 @@ const RSVP = () => {
         }
 
         try {
-            await fetch(`http://100.26.163.236:8080/list`, {
+            await fetch(`https://api.journey2johnson2021.com/list`, {
                 method: 'PATCH',
                 credentials: 'include',
                 body: JSON.stringify(updateRSVP),
