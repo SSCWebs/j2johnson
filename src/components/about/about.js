@@ -22,7 +22,7 @@ export class About extends React.Component {
                     <div className="vidBox center">
                     <ReactPlayer 
                         className="video center"
-                        url="https://s3.amazonaws.com/journey2johnson2021.com/The+Proposal!.mov"
+                        url="https://s3.amazonaws.com/journey2johnson2021.com/The+Proposal.mp4"
                         width="100%"
                         controls={true} />
                     </div>
