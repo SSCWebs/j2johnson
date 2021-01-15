@@ -11,7 +11,9 @@ const RSVP = () => {
     const [guestMsg, setGuestMsg] = useState("");
 
     const handleChange = (e) => {
-        setName(e.target.value);
+        const name = e.target.value;
+        const result = name.split(/\s+/).map(s => s.charAt(0).toUpperCase() + s.substring(1).toLowerCase()).join(" ");
+        setName(result);
     }
 
     const handleKeyPress = (e) => {
