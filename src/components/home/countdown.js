@@ -13,7 +13,7 @@ export class Countdown extends React.Component {
 
     componentDidMount = () => {
         setInterval(() => {
-            const distance = new Date(+new Date("May 8, 2021 16:00:00") - +new Date());
+            const distance = new Date(+new Date("July 2, 2021 16:00:00") - +new Date());
             
             let setDays = Math.floor(+distance / 86400000);
             let setHours = distance.getUTCHours();

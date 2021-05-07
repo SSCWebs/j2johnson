@@ -10,7 +10,7 @@ const FAQ = () => {
                     <Card className="col-md-8 faq">
                         <h1 className="faqText question">When should I RSVP by?</h1>
                         <h6 className="faqText answer">Please RSVP no later than
-                        February 1, 2021</h6>
+                        May 31st, 2021</h6>
                     </Card>
                     <Card className="col-md-8 faq mobileFaq2">
                         <h1 className="faqText question">Is a mask required at your
@@ -53,7 +53,7 @@ const FAQ = () => {
                         <h6 className="faqText answer">Please see the{" "}
                             <i><a href="https://s3.amazonaws.com/journey2johnson2021.com/Parking_Map.pdf"
                                 target="_blank" rel="noopener noreferrer" className="faqLink">parking map</a></i>{" "}
-                        for detail instructions for parking at the reception.
+                        for detail instructions for parking at the weeding and reception.
                         Cocktail hour will start promptly at 5:30pm.</h6>
                     </Card>
                     <Card className="col-md-8 faq">
@@ -70,7 +70,7 @@ const FAQ = () => {
                     <Card className="col-md-5 faq center">
                         <h1 className="faqText question">When should I RSVP by?</h1>
                         <h6 className="faqText answer">Please RSVP no later than
-                        February 1, 2021</h6>
+                        May 31st, 2021</h6>
                     </Card>
                     <Card className="col-md-5 faq center mobileFaq2">
                         <h1 className="faqText question">Is a mask required at your
@@ -119,7 +119,7 @@ const FAQ = () => {
                         <h6 className="faqText answer">Please see the{" "}
                             <i><a href="https://s3.amazonaws.com/journey2johnson2021.com/Parking_Map.pdf"
                                 target="_blank" rel="noopener noreferrer" className="faqLink">parking map</a></i>{" "}
-                        for detail instructions for parking at the reception.
+                        for detail instructions for parking at the wedding and reception.
                         Cocktail hour will start promptly at 5:30pm.</h6>
                     </Card>
                     <Card className="col-md-5 faq center">

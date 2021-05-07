@@ -15,8 +15,8 @@ export class Info extends React.Component {
                         <div className="row">
                             <div className="center">
                                 <h3 className="candleMustard">Wedding</h3>
-                                <p><b className="infoHead">New Testament Church</b>
-                                <br />403 Rapidan Street Portsmouth, VA 23701
+                                <p><b className="infoHead">Historic Post Office</b>
+                                <br />132 E Queen Street #4004 Hampton, VA 23669
                                 <br />4:00PM
                                 </p>
                             </div>

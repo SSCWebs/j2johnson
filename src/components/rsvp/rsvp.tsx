@@ -115,8 +115,8 @@ export class RSVP extends React.Component<{}, IState> {
                     <h1 className="heading">Be Our Guest</h1>
                     <p>Please enter your first and last name to unlock your RSVP invitation. If you're
                     responding for you and your plus one you'll be able to RSVP for
-                    your entire group. We ask that you kindly accept or decline by February
-                    1st, 2021.</p>
+                    your entire group. We ask that you kindly accept or decline by May
+                    31st, 2021.</p>
                     <br />
                     <h3>With Respect <FontAwesomeIcon icon={faHeart} size="sm" /> ...</h3>
                     <p>“We have decided to have our wedding be an adult-only occasion. <br />
